@@ -90,7 +90,7 @@ public class ViewNode extends SpyObject {
         } catch (IOException e) {
           getLogger().error("I/O error: " + e.getMessage(), e);
         }
-//        getLogger().info("I/O reactor terminated for " + addr.getHostName());
+        getLogger().info("I/O reactor terminated for " + addr.getHostName());
       }
     }, "Couchbase View Thread for node " + addr);
     ioThread.start();
