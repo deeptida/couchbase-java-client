@@ -131,7 +131,7 @@ public class ViewTest {
       }
     };
     bucketTool.poll(callback);
-    bucketTool.waitForWarmup(client);
+//    bucketTool.waitForWarmup(client);
 
     // Create some design documents
     String docUri = "/default/_design/" + TestingClient.MODE_PREFIX
